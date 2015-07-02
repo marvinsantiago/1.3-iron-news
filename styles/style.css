@@ -76,6 +76,8 @@ nav li:first-of-type:before {
   margin: auto;
   padding: 10px;
   background: #EEF0F3;
+  border-top: solid 2px;
+  border-color: #8D90A1;
   font-family: Verdana;
   font-size: 8pt;
   text-align: center;
