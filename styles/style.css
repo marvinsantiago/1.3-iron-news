@@ -18,11 +18,11 @@ nav {
   margin: auto;
   padding: 10px;
   overflow: auto;
+
 }
 nav h1 {
   font-weight: bold;
   display: block;
-
 }
 
 nav a:hover {
@@ -31,13 +31,12 @@ nav a:hover {
 
 nav li:after {
   content: " | ";
-  position: relative;
+  display: inline-block;
   left: 1px;
 }
 nav li:before {
-  content: " / ";
-  position: relative;
-  left: -1px;
+  content:"";
+  clear: both;
 
 }
 
@@ -52,12 +51,11 @@ nav li:before {
 }
 
 nav ul {
-
-  float: left;
+    display:block;
 }
 
 nav li {
-    display: inline-block;
+    display:block;
     float: left;
 }
 
@@ -80,11 +78,30 @@ nav li:first-of-type:before {
   border-color: #8D90A1;
   font-family: Verdana;
   font-size: 8pt;
-  text-align: center;
+  display: block;
+
 }
+
+.footer ul {
+    display:block;
+}
+
 .footer li {
+    display:block;
+    float: left;
+}
+
+.footer li:before {
+    clear: both;
+    content: "";
+}
+.footer li:after {
     display: inline-block;
-    padding: 0 5px;
+    content: " | ";
+}
+
+.footer a:hover {
+    color:white;
 }
 a {
   color: inherit;
