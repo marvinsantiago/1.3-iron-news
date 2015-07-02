@@ -16,13 +16,22 @@ nav {
   background: #8D90A1;
   width: 75%;
   margin: auto;
-  padding: 10px;
+  padding: 0 10px;
   overflow: auto;
-
 }
+
 nav h1 {
   font-weight: bold;
-  display: block;
+  display: inline-block;
+}
+
+nav ul {
+    float: left;
+}
+
+nav li {
+    display:block;
+    float: left;
 }
 
 nav a:hover {
@@ -41,6 +50,10 @@ nav li:before {
 
 }
 
+nav li:first-of-type:before {
+  content: none;
+}
+
 #logo span {
   color: white;
   border: white solid 2px;
@@ -50,20 +63,6 @@ nav li:before {
   text-align: center;
   display: inline-block;
 }
-
-nav ul {
-    display:block;
-}
-
-nav li {
-    display:block;
-    float: left;
-}
-
-nav li:first-of-type:before {
-  content: none;
-}
-
 .content {
   width: 75%;
   margin: auto;
@@ -73,6 +72,12 @@ nav li:first-of-type:before {
 
 .content a:hover {
     color:white;
+}
+
+.comments {
+    list-style: none;
+    font-size: 8pt;
+    font-family: #B0B0AE;
 }
 .footer {
   width: 75%;
@@ -88,12 +93,12 @@ nav li:first-of-type:before {
 }
 
 .footer ul {
-    display:block;
+    display:inline;
 }
 
 .footer li {
-    display:block;
-    float: left;
+    display:inline-block;
+    float: right;
 }
 
 .footer li:before {
