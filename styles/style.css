@@ -17,7 +17,6 @@ nav {
   width: 75%;
   margin: auto;
   padding: 10px;
-
   overflow: auto;
 }
 nav h1 {
@@ -53,14 +52,13 @@ nav li:before {
 }
 
 nav ul {
-  display: inline;
+
+  float: left;
 }
 
 nav li {
-  display: inline;
-  padding: 0 5px;
-  position: relative;
-  float: left;
+    display: inline-block;
+    float: left;
 }
 
 nav li:first-of-type:before {
@@ -79,8 +77,8 @@ nav li:first-of-type:before {
   padding: 10px;
   background: #EEF0F3;
 }
-.footer ul {
-    display: inline-block;
+.footer:hover {
+    color:white;
 }
 a {
   color: inherit;
