@@ -69,6 +69,10 @@ nav li:first-of-type:before {
   padding: 10px;
   background: #EEF0F3;
 }
+
+.content a:hover {
+    color:white;
+}
 .footer {
   width: 75%;
   margin: auto;
